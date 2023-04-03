@@ -171,9 +171,6 @@ updateDisplay();
     }else{
         ball.useGravity = lastuseGravityBool
     }
-
-    
-
 if(ball.useGravity){
     addConstGravForce();
 }
@@ -189,10 +186,6 @@ if(isMouseDown){
     forceDisplayMouse.style.left = mousepos.x + "px";
     forceDisplayMouse.innerText = (globalgravityForce*  ( currentmouseforce * ball.mass)).toFixed(2) + " KG";
 }else{
-    forceDisplayMouse.style.top = mousepos.y + "px";
-    forceDisplayMouse.style.left = mousepos.x + "px";
     forceDisplayMouse.style.color = "transparent";
 }
-
-        
 }
